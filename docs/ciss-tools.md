@@ -1,0 +1,67 @@
+- Summary: CISS Tools is a suite of digital products for Crisis In-Shift Supervisors (CISS) and Crisis Supporters (CS).
+    - It comprises two main products:
+        - **CISS Central** (for voice/phone services via 13 11 14 and 13 YARN) and
+        - **DIGI Central** (for digital text/chat services).
+    - Each product has a CS Hub frontend for Crisis Supporters and a Twilio Flex agent desktop for In-Shift Support Supervisors (ISS).
+- Products/subproducts/environments
+    - CISS Central
+        - CS Hub
+            - PROD: https://ciss-central.lla-custom-services.com/
+            - Training: (setup soon)
+            - UAT: https://uat-ciss-central.netlify.app/
+            - DEV: https://ciss-central-dev.netlify.app/login/credentials
+        - Flex
+            - PROD: https://flex.twilio.com/topaz-crocodile-1825
+            - Training: (setup soon)
+            - UAT: https://flex.twilio.com/copper-narwhal-5955
+            - DEV: (access through console)
+            
+            ![How to access different environments through Twilio Flex](attachment:da13a289-dcea-4769-96e0-ecc2b39bccb5:image.png)
+            
+            How to access different environments through Twilio Flex
+            
+    - Digi Central
+        - CS Hub
+            - PROD: https://digi.lla-custom-services.com/
+            - Training: (setup soon)
+            - UAT: https://uat-digi.netlify.app/
+            - DEV: https://digital-ciss-dev.netlify.app/login/credentials
+        - Flex
+            - PROD: https://flex.twilio.com/iceberg-cuttlefish-3787
+            - Training: (setup soon)
+            - UAT: https://flex.twilio.com/relaxing-manatee-5997
+            - DEV: (access through console)
+- Product lead/s: Mark Manners, Ella Zmudzki
+- Tech Lead: Toby Reid
+- Projects: On Shift Experience, Unify
+- Vendor/s: Colosl (integration partner) - Steve Wilcox
+- Infrastructure: Netlify (CS Hub frontend), Twilio (Flex agent desktop)
+    - CISS Central
+        - PROD: Netlify (custom domain: [ciss-central.lla-custom-services.com](http://ciss-central.lla-custom-services.com))
+        - UAT: Netlify ([uat-ciss-central.netlify.app](http://uat-ciss-central.netlify.app))
+        - DEV: Netlify ([ciss-central-dev.netlify.app](http://ciss-central-dev.netlify.app))
+    - Digi Central
+        - PROD: Netlify (custom domain: [digi.lla-custom-services.com](http://digi.lla-custom-services.com))
+        - UAT: Netlify ([uat-digi.netlify.app](http://uat-digi.netlify.app))
+        - DEV: Netlify ([digital-ciss-dev.netlify.app](http://digital-ciss-dev.netlify.app))
+- Repo: Managed by vendor (Colosl)
+    - Code: Github
+    - Build automation: Github actions & some netlify stuff
+- Uptime Monitoring:
+    - [Better Stack](https://uptime.betterstack.com/team/t277329/monitors/2842923), for stuff hosted on Netlify.
+    - Twilio hosts Flex itself, so not necessary.
+- Application Alerts:
+    - Sentry
+- Platform: Twilio (Flex), Netlify
+- Data & Analytics
+    - GTM (Google Tag Manager): GTM-WV6QPHMZ (CISS Central), GTM-T4RW8XRZ (Digi Central)
+    - GA4 (Google Analytics 4)
+    - Twilio Flex Insights (built-in analytics)
+- Documentation (notion/jira etc)
+    - Tasks: Notion (managed via Digital Product Wiki)
+    - Sprints: Managed by vendor (Colosl)
+    - Releases: [CISS Central Version Release](https://www.notion.so/CISS-Central-Version-Release-408cf77fe56244c1b716d3b5eaafb7a1?pvs=21)
+    - [CISS/DIGI Central (home)](https://www.notion.so/CISS-DIGI-Central-home-7e18658c140e452b807bedb094268b09?pvs=21) - main product documentation
+    - [The Vault for CISS Central](https://www.notion.so/The-Vault-for-CISS-Central-5fb2987f3a684239a5af99233f0c34c1?pvs=21) - key documentation repository
+    - [CISS Central for crisis supporters](https://www.notion.so/CISS-Central-for-crisis-supporters-fb91e5acb8a0473d94417fba5290d51b?pvs=21) - user-facing documentation
+    - [CISS Central Architecture](https://www.notion.so/CISS-Central-Architecture-2b8d91c9531880898bfae94a1fb318b0?pvs=21) - systems architecture diagrams

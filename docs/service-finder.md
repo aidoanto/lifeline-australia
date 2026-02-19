@@ -1,0 +1,37 @@
+- **Summary:** Tool for Crisis Supporters to search Infoxchange's 400k+ community services database and share referral plans with Help Seekers via SMS, email or link. Aims to replace paper-based "Flippy Dippys" with a modern digital solution. Once support finder launches,
+- **Environments and URLs:** Confusingly, there are two different services both called “Service Finder”.
+    - The public-facing “Service Finder” can be found on the Lifeline website by any member of the public: https://lifeline.serviceseeker.com.au/
+    - It is a skin of Infoxchange’s “Service Seeker”: https://www.serviceseeker.com.au/
+    - There is also “Service Finder” (for crisis supporters), which is an application that allows crisis supporters to use the Infoxchange database to search services in their area and put together a plan.
+        - PROD
+            - [servicefinder.lla-custom-services.com](http://servicefinder.lla-custom-services.com)
+        - UAT
+            - [uat-service-finder.netlify.app](http://uat-service-finder.netlify.app)
+        - DEV
+            - [dev-service-finder.netlify.app](http://dev-service-finder.netlify.app)
+        - CMS (Sanity)
+            - PROD: [lifelinecs.sanity.studio](http://lifelinecs.sanity.studio)
+            - DEV: [service-finder-sandbox.sanity.studio](http://service-finder-sandbox.sanity.studio)
+- **Product lead/s:** Ben Ferrari
+- **Project name:** Service Finder
+- **Vendor/s:** Colosl, Infoxchange (data provider), Nightjar (legacy development)
+- **Infrastructure:** Netlify
+- **Repo:** [GitHub - lifelineau/service-finder](https://github.com/lifelineau/service-finder)
+    - **Build automation:** GitHub Actions
+- **Uptime Monitoring:**
+    - **Application Alerts:** [Sentry](https://lifeline-au.sentry.io/projects/service-finder/?project=4508237662126080)
+- **Integrations**
+    - Twilio (SMS/email referral plans)
+        - Phone number (the one it gets sent from): +61 481 610 006
+        - Account: PROD Lifeline NON CRISIS
+    - [Infoxchange API](https://www.serviceseeker.com.au) (community services data)
+    - Algolia (search)
+- **Data & Analytics**
+    - [GTM](https://tagmanager.google.com/?authuser=0#/container/accounts/6006292423/containers/61311165/workspaces/14)
+    - GA
+    - [Tracking Plan](https://docs.google.com/spreadsheets/d/1eqOVQQehGzVGhO7q8vSs6P84vxIEOQrSVQArFcMAdd0/edit#gid=639423297)
+- **Documentation**
+    - Knowledge Base: [Notion - Service Finder (home)](https://www.notion.so/Service-Finder-home-c9fed4396188410d9d4c6400ee5064f7?pvs=21)
+    - Tasks: [Backlog (Service Finder)](https://www.notion.so/cd2e4f9acb1d496dbb66d99122c176b9?pvs=21)
+    - [Service Finder TaskList](https://www.notion.so/29d2aa5444e54b8aae46483835ed6b5f?pvs=21)
+- **Support docs & BCP:**   

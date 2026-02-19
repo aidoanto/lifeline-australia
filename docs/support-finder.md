@@ -1,0 +1,37 @@
+- **Summary:** Aggregates Support Toolkit and Service Finder resources so Crisis Supporters can find and share information, resources and services with Help Seekers. Targets young people under 25 who make up 55% of Digital Services Help Seekers.
+- **Environments and URLs**
+    - Support Finder (CS-facing)
+        - UAT: [uat-support-finder.netlify.app](http://uat-support-finder.netlify.app)
+        - DEV: [dev-support-finder.netlify.app](http://dev-support-finder.netlify.app)
+    - YourPlan (Help Seeker-facing. If the helpseeker clicks on the plan that gets sent to them, this is what the service is called)
+        - PROD: [your-support.lla-custom-services.com](http://your-support.lla-custom-services.com)
+        - UAT: [uat-your-support.netlify.app](http://uat-your-support.netlify.app)
+        - DEV: [dev-your-support.netlify.app](http://dev-your-support.netlify.app)
+    - Shift buddy (deprecated earlier version of this project)
+        - PROD: [support-finder.lla-custom-services.com](http://support-finder.lla-custom-services.com)
+- **Product lead/s:** Ben Ferrari (Product Owner), Toby Reid (Tech Lead)
+- **Dev Team:** Colosl
+- **Project name:** Support Finder
+- **Vendor/s:** Colosl (integration partner), Nightjar (initial designs)
+- **Infrastructure:** Netlify
+- **Repo:** [GitHub - lifelineau/support-finder](https://github.com/lifelineau/support-finder)
+    - **Build automation:** GitHub Actions
+- **Uptime Monitoring:** Better Stack
+- **Application Alerts:** Sentry
+- **Integrations**
+    - Algolia (search)
+    - Infoxchange (services data)
+    - Sanity (content)
+- **Data & Analytics**
+    - GTM
+        - PROD: GTM-5B8R7MZB
+        - UAT: GTM-K7N8MH8K
+    - GA
+        - PROD: G-3S15CRTLT2
+        - UAT: G-9EZTPG1XV6
+- **Documentation**
+    - Knowledge Base: [Notion - Support Finder](https://www.notion.so/Support-Finder-2af407bf9b0f44ecb47cedce4f22529c?pvs=21)
+    - Tasks: [Backlog](https://www.notion.so/7fda3e9446bf401db1c3e20e8a54f567?pvs=21)
+    - Testing: [Support Finder Testing](https://www.notion.so/Support-Finder-Testing-e98e2a93e8c341449d5fd481d1afbbea?pvs=21)
+    - [Technical Solution](https://www.notion.so/Support-Finder-Technical-Solution-1b2d91c95318802d8e09ed30175f5124?pvs=21)
+    - [Algolia (Support Finder)](https://www.notion.so/Algolia-Support-Finder-0a65318d141140a09f1e474b350ac5d1?pvs=21)

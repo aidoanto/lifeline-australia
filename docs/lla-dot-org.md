@@ -1,0 +1,97 @@
+- Summary:
+- Environments and URLs
+    - PROD
+        - [www.lifeline.org.au](https://www.lifeline.org.au/)
+        - [lla-drupal-app-prod.lifeline.org.au](https://lla-drupal-app-prod.lifeline.org.au/)
+        - [lla-frontdoor-endpoint-prod-fkeecta5bxcgdjbu.a03.azurefd.net](https://lla-frontdoor-endpoint-prod-fkeecta5bxcgdjbu.a03.azurefd.net/)
+    - UAT
+        - [lla-drupal-app-uat.lifeline.org.au](https://lla-drupal-app-uat.lifeline.org.au/)
+        - [lla-frontdoor-endpoint-uat-fcb8euhqa9arfxbj.a03.azurefd.net](https://lla-frontdoor-endpoint-uat-fcb8euhqa9arfxbj.a03.azurefd.net/)
+- Sub products
+    - Toolkit
+        - PROD: https://toolkit.lifeline.org.au/ (not all paths redirected, e.g.https://toolkit.lifeline.org.au/test)
+    - H2H
+        - PROD
+            - [www.lifelineh2hsydney.org.au](https://www.lifelineh2hsydney.org.au/) (legacy)
+            - [lla-afl-h2h-drupal-app-prod.lifeline.org.au](https://lla-afl-h2h-drupal-app-prod.lifeline.org.au/) (not launched yet)
+        - UAT
+            - [lla-afl-h2h-drupal-app-uat.lifeline.org.au](https://lla-afl-h2h-drupal-app-uat.lifeline.org.au/)
+- **Product lead/s**: Ben Ferrari
+- **Project name**: Midas
+- **Vendor/s**: Bliss
+- Infrastructure: Azure (Including Container Apps, Front Door)
+    - Subscription: [LLA-WEB](https://portal.azure.com/#resource/subscriptions/872da564-e774-4334-b56f-68e9f82a89ec)
+        - Resource groups:
+            - PROD: [LLA-RG-Web-Prod](https://portal.azure.com/#resource/subscriptions/872da564-e774-4334-b56f-68e9f82a89ec/resourceGroups/LLA-RG-Web-Prod)
+            - UAT: [LLA-RG-Web-UAT](https://portal.azure.com/#resource/subscriptions/872da564-e774-4334-b56f-68e9f82a89ec/resourceGroups/LLA-RG-Web-UAT)
+- **Repo**: [Bitbucket](https://www.notion.so/lifeline-org-au-2efd91c9531880f184ced69e13791665?pvs=21)
+    - **Build automation**: [Bitbucket Pipelines](https://bitbucket.org/lifelineau/lla-website/pipelines)
+- Uptime Monitoring: [Better Stack](https://uptime.betterstack.com/team/t277329/monitors/2830493)
+- Application Alerts: n/a
+- Integrations
+    - Aloglia
+        - PROD: https://dashboard.algolia.com/apps/9B08VVZR83/dashboard
+        - UAT: https://dashboard.algolia.com/apps/2K1SUQZUW3/dashboard
+    - [Stockist](https://stockist.co/dashboard/maps/map_4q6j6n5q/locations)
+    - Infoxchange
+    - Salesforce
+    - [Genesys](https://www.notion.so/Genesys-f6ccbb66fb364aeca21e7b485b683731?pvs=21) (check with Stephane if any issues)
+- Data & Analytics:
+    - Current state: [GA](https://analytics.google.com/analytics/web/#/a390238p315584957/reports/intelligenthome)
+        - GTM
+            - PROD:
+            - UAT:
+        - BigQuery:
+    - Future state: Current state + Databricks & PowerBI
+- Documentation (notion/jira etc)
+    - Tasks: [Lifeline Jira](https://lifelineaustralia.atlassian.net/jira/software/c/projects/MIDAS/boards/171?assignee=712020%3A785cbc62-1560-4783-a234-b4b63c393b90)
+    - Tasks: Bliss Jira
+    - Bugs and Defects: [Bugherd](https://www.bugherd.com/projects/478404/kanban)
+    - Sprints: [Lifeline Jira](https://lifelineaustralia.atlassian.net/jira/software/c/projects/MIDAS/boards/171?assignee=712020%3A785cbc62-1560-4783-a234-b4b63c393b90)
+    - Tests:
+        - Test cases and execution: [Vansah](https://lifelineaustralia.atlassian.net/projects/MIDAS?assignee=712020%3A785cbc62-1560-4783-a234-b4b63c393b90&selectedItem=com.atlassian.plugins.atlassian-connect-plugin%3Acom.vansah.jira.vansah-plugin__project-page)
+        - Automated tests: [Bitbucket + Better Stack](https://bitbucket.org/lifelineau/playwright-lla/src/main/)
+    - Knowledge Base: [Notion](https://www.notion.so/276d91c95318803a9c27d7f45ef4ed12?pvs=21)
+- Support docs & BCP
+    - [lifeline.org.au Support Process & Business Continuity Plan (BCP).docx](https://lifelineaustralia.sharepoint.com/:w:/r/sites/DigitalProduct/_layouts/15/Doc.aspx?sourcedoc=%7B660694E3-02AE-4A58-9803-874DCEAB6D9B%7D&file=lifeline.org.au%20Support%20Process%20%26%20Business%20Continuity%20Plan%20(BCP).docx&action=default&mobileredirect=true)
+
+## **Legacy [lifeline.org.au](http://lifeline.org.au) & Toolkit**
+
+- Sub products
+    - Toolkit
+    - H2H
+    - South East SA
+- Environments and URLs
+    - PROD: https://llaweb-prod-admin.azurewebsites.net/
+        - South East: https://llaweb-prod-southeast.azurewebsites.net/
+        - East: https://llaweb-prod-east.azurewebsites.net/
+    - UAT: https://llaweb-uat-admin.azurewebsites.net/
+    - Toolkit
+        - PROD: n/a (known paths redirect to new lifeline.org.au)
+        - UAT: https://uat-lla-toolkit.netlify.app/
+        - DEV: https://dev-lla-toolkit.netlify.app/
+    - H2H
+        - PROD
+            - [www.lifelineh2hsydney.org.au](https://www.lifelineh2hsydney.org.au/) (legacy)
+            - [lla-afl-h2h-drupal-app-prod.lifeline.org.au](https://lla-afl-h2h-drupal-app-prod.lifeline.org.au/) (unreleased)
+        - UAT: [lla-afl-h2h-drupal-app-uat.lifeline.org.au](https://lla-afl-h2h-drupal-app-uat.lifeline.org.au/) (unreleased)
+    - South East SA
+        - PROD: https://southeast-sa.lifeline.org.au/
+- **Product lead/s**: Ben Ferrari
+- **Project name**: n/a
+- Vendor: AC3 (infrastructure only)
+- Infrastructure: Azure
+    - Subscription: [Pay-As-You-Go](https://portal.azure.com/#resource/subscriptions/c13efcbe-6c9b-47ae-8576-3d249458b49b)
+    - Resource Groups:
+        - PROD: [RGP-LLAWEB-PROD](https://portal.azure.com/#resource/subscriptions/c13efcbe-6c9b-47ae-8576-3d249458b49b/resourceGroups/RGP-LLAWEB-PROD)
+        - UAT: [RGP-LLAWEB-UAT](https://portal.azure.com/#resource/subscriptions/c13efcbe-6c9b-47ae-8576-3d249458b49b/resourceGroups/RGP-LLAWEB-UAT)
+- **Repo**: [Bitbucket](https://bitbucket.org/lifelineau/lifeline/src/master/)
+    - **Build automation**: [Azure DevOps](https://dev.azure.com/LLA-Web/)
+- Uptime Monitoring: n/a
+- Application Alerts: Azure Monitoring
+- Integrations: n/a
+- Data & Analytics
+    - Google Analytics:
+    - Google Tag Manager:
+- Documentation (notion/jira etc)
+    - [Notion](https://www.notion.so/2024-How-we-do-stuff-process-and-policies-28f6e7c6ea3b4c28b5172e21d3f1fec9?pvs=21) knowledge base & guides

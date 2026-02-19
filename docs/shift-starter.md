@@ -1,0 +1,47 @@
+- **Summary:** Web-based solution for Crisis Supporters to begin their shift with step-by-step guided login, system compatibility checks, and Zscaler VPN access verification. Reduces setup time (previously up to 15+ minutes) and IT support calls.
+- **Environments and URLs**
+    - Netlify (new platform)
+        - PROD: [start.lifeline.org.au](http://start.lifeline.org.au)
+        - PROD: [shiftstarter-lla.netlify.app](http://shiftstarter-lla.netlify.app)
+        - UAT: [uat-shiftstarter-lla.netlify.app](http://uat-shiftstarter-lla.netlify.app)
+        - DEV: [dev-shiftstarter-lla.netlify.app](http://dev-shiftstarter-lla.netlify.app)
+- Framer (prototype)
+    - UAT: [thriving-states-977782.framer.app](http://thriving-states-977782.framer.app)
+    - DEV: [mindful-size-763318.framer.app](http://mindful-size-763318.framer.app)
+- **Product team/s:**
+    - Mark Manners (Project Lead)
+    - Ben/Ella (Product Team)
+    - Satish Shrestha (Former Product Manager)
+    - Toby Reid (Tech Lead)
+- **UX/Design:** Andy Hearne
+- **Project name:** Shift Starter
+    - Also has been a part of:
+        - On-shift experience
+        - Unify
+- **Vendor/s:**
+    - Colosl
+    - Framer (prototype)
+- **Infrastructure:** Originally Framer, migrated to Netlify (Next.js/Redux)
+- **Repo:** [Github](https://github.com/lifelineau/shift-buddy)
+    - **Build automation:** [Github Actions](https://github.com/lifelineau/shift-buddy/actions)
+- **Uptime Monitoring:** Better Stack
+- **Application Alerts:**
+- **Integrations**
+    - Zscaler (VPN/remote access checks. We check user is using Zscaler before proceeding)
+    - Operata (voice diagnostics)
+- **Diagnostics available**
+    - Human Assisted Digital: Zscaler, Computer, Browser, Speed, Power Source
+    - Voice: Zscaler, Computer, Browser, Speed, Operata, Audio, Genesys call diagnostics, Power source
+- **Data & Analytics**
+    - [Tracking plan](https://www.notion.so/Shift-Starter-tracking-plan-1dfd91c953188046b31ddffa188e87a3?pvs=21)
+    - GA & GTM
+        - PROD: https://analytics.google.com/analytics/web/#/a390238p464489535/reports/intelligenthome?params=_u..nav%3Dmaui
+        - UAT: doesn’t exist
+        - PROD: https://tagmanager.google.com/?authuser=0#/container/accounts/329162140/containers/219065937/workspaces/3
+        - UAT: doesn’t exist
+- **Documentation**
+    - Knowledge Base: [Notion - Shift Starter](https://www.notion.so/Shift-Starter-174d91c95318800eb44bde38a6114144?pvs=21)
+    - Architecture: [Shift Starter Architecture](https://www.notion.so/Shift-Starter-Architecture-1dfd91c95318803e8ce6fd4ffc727207?pvs=21)
+    - Tasks: [Jira Product Discovery](https://lifelineaustralia.atlassian.net/jira/polaris/projects/AX/ideas/view/4842479)
+    - Design: [Figma - Shift Starter Design files](https://www.figma.com/design/YJ3zYr4J5pV41SwsHn127n/Shift-Starter)
+    - Resources: [Updating Shift Starter Resources](https://www.notion.so/Updating-Shift-Starter-Resources-2f6d91c9531880ae86a8cc02d2662c5c?pvs=21)

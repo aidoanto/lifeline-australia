@@ -1,0 +1,41 @@
+- **Summary:** Suicide safety planning app (mobile + web) transferred from Beyond Blue to Lifeline in March 2024. Originally developed in 2016 by Beyond Blue and Monash University. Helps users create personalised safety plans for crisis moments.
+- **Environments and URLs**
+    - Web App
+        - PROD: [beyondnow.lifeline.org.au](http://beyondnow.lifeline.org.au)
+        - UAT: [uat.beyondnow.lifeline.org.au](http://uat.beyondnow.lifeline.org.au)
+        - Domain redirect: [beyondnow.org.au](http://beyondnow.org.au) → PROD
+    - Mobile Apps
+        - iOS: [App Store](https://apps.apple.com/au/app/beyond-now-suicide-safety-plan/id1059270058) (Apple account: LIFELINE AU) https://appstoreconnect.apple.com/apps/1059270058/distribution/ios/version/inflight
+        - Android: [Google Play](https://play.google.com/store/apps/details?id=au.org.beyondblue.beyondnow&hl=en_AU&pli=1) https://play.google.com/console/u/0/developers/7480207563928936629/app/4975531017611827502/app-dashboard
+- **Sub products**
+    - iOS App (Native)
+    - Android App (Native)
+    - Web App (Vue.js, rebuilt by DEPT)
+- **Product lead/s:** Satish Shrestha (Product Manager), Toby Reid (Tech Lead)
+- **Project name:** Project Zipper (for 2026 project which aims to allow users to
+- **Vendor/s:** DEPT (development, hosting, design) is original vendor, Bound is interim support vendor while we go through procurement for a new vendor to build Zipper and support thereafter
+- **Infrastructure**
+    - Mobile: Native iOS/Android
+    - Web: AWS (transferred to Lifeline tenancy, Anish helped)
+- **Repos**
+    - Bitbucket project: https://bitbucket.org/lifelineau/workspace/projects/BN
+- **Build automation:**
+    - Bitrise https://app.bitrise.io/workspaces/221f6b623d130339 (currently broken due to GCP IAM for Android and App Groups for iOS)
+- **Uptime Monitoring:** Better Stack
+- **Application Alerts:**
+    - iOS and Android mobile apps https://console.firebase.google.com/u/0/project/beyondnow-via-app-stores/overview
+    - Web app: https://lifeline-au.sentry.io/insights/projects/lifeline-safety-plan/?project=4506737466015744
+- **Integrations:**
+    - Google Cloud Platform: https://console.cloud.google.com/welcome?project=beyondnow-via-app-stores
+- **Data & Analytics**
+    - GTM: GTM-KRSKZG6L
+    - GA: https://analytics.google.com/analytics/web/#/a64461621p154870421/reports/intelligenthome
+- **Documentation**
+    - Knowledge Base: [Notion - Beyond Now (home)](https://www.notion.so/Beyond-Now-home-521b0a980fb94dd28e056b82d6450a7a?pvs=21)
+    - Testing: [Beyond Now Testing](https://www.notion.so/Beyond-Now-Testing-149d91c95318801ca61be37bbdcf3023?pvs=21)
+    - Files: [OneDrive - Beyond Now folder](https://lifelineaustralia.sharepoint.com/:f:/s/DigitalProduct/En7O0PThDQ1JsklLPHL2G5oBN-XGKRbCR7ZXfyju-rhQzg)
+    - Design: [Figma - BeyondNow Design](https://www.figma.com/file/DYMX7jCfFr47Ilc59Bsrlz/BeyondNow---Design)
+    - [Release process](https://www.notion.so/Release-process-f16c3bda28b24d24b41c85573926b492?pvs=21)
+    - [New Vendor Selection Zipper](https://www.notion.so/New-Vendor-Selection-Zipper-299d91c9531880dc9308d6397336dc65?pvs=21)
+- **Support docs & BCP**
+    - Tier 1 support: [Support Processes](https://www.notion.so/Digital-Products-Support-Process-6c13779367b44f8da17cbcb90de0e3b3?pvs=21)
